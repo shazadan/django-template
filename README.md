@@ -76,19 +76,24 @@ Set Environment Variables
 
 2. Implement changes in the environment
         
-   [vagrant] $ source /etc/environment
-    
-    exit
+        $ vagrant ssh [vagrant] $ source /etc/environment
+
+3. Log out of vagrant    
+        
+        exit
 
 Run Migrations
 --------------
 1. Run command to push DB migrations
    
-   $ fab vagrant migrate
+        $ fab vagrant migrate
 
 Check Django Application
 ------------------------
 1. Run command
-    $ fab vagrant runserver
+
+        $ fab vagrant runserver
     
-2. Open a browswer and goto address localhost:8000 or 127.0.0.1:8000
+2. Open a browswer and goto address 
+        
+        localhost:8000 or 127.0.0.1:8000
