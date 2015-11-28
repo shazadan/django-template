@@ -46,17 +46,17 @@ You will now be met with a series of 6 prompts. The first one will ask you for t
 
 Finally, grant this new user access to your new database with this command:
 
-    GRANT ALL PRIVILEGES ON DATABASE [dbname] TO [dbuser];
+    <postgres> GRANT ALL PRIVILEGES ON DATABASE [dbname] TO [dbuser];
 
 To ensure that a test database can be created when running tests alter the
 [dbuser] role.
 
-    ALTER USER [dbuser] CREATEDB;
+    <postgres> ALTER USER [dbuser] CREATEDB;
 
 
 You now have a PostgreSQL database and a user to access that database with.
 
-    \q
+    <postgres> \q
 
 Set Environment Variables
 -------------------------
@@ -76,11 +76,11 @@ Set Environment Variables
 
 2. Implement changes in the environment
         
-        $ vagrant ssh [vagrant] $ source /etc/environment
+        [vagrant] $ source /etc/environment
 
 3. Log out of vagrant    
         
-        exit
+        [vagrant] $ exit
 
 Run Migrations
 --------------
